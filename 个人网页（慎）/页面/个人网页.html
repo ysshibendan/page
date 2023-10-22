@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>个人页面</title>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./index.css">
+    <style>
+        
+    </style>
+</head>
+<body>
+    <!-- 顶部导航 -->
+    <div class="topbar" id="one">
+        <!-- 版心 -->
+        <div class="container clearfix">
+            <!-- 左边个人页面 -->
+            <div class="Hello leftfix"><span>阿梅的博客</span></div>
+            <!-- 右边导航区 -->
+            <div class="Choose rightfix">
+                <ul class="Click">
+                    <li><a href="#one">首页</a></li>
+                    <li><a href="#two">个人介绍</a></li>
+                    <li><a href="#six">照片展示</a></li>
+                    <li><a href="#three">文章分享</a></li>
+                    <!-- <li><a href="#five">登录</a></li>
+                    <li><a href="#six">注册</a></li> -->
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 图片切换 -->
+    <div class="switch middle">
+        <div class="pictures">
+            <input type="radio" name="r" id="r1" checked>
+            <input type="radio" name="r" id="r2">
+            <input type="radio" name="r" id="r3">
+            <input type="radio" name="r" id="r4">
+            <input type="radio" name="r" id="r5">
+            <div class="slide s1">
+                <img src="./picture5.jpg" alt="小图片">
+            </div>
+            <div class="slide">
+                <img src="./picture6.jpg" alt="小图片">
+            </div>
+            <div class="slide">
+                <img src="./picture7.jpg" alt="小图片">
+            </div>
+            <div class="slide">
+                <img src="./picture8.jpg" alt="小图片">
+            </div>
+            <div class="slide">
+                <img src="./picture9.jpg" alt="小图片">
+            </div>
+        </div>
+
+        <div class="navigation">
+            <label for="r1" class="bar"></label>
+            <label for="r2" class="bar"></label>
+            <label for="r3" class="bar"></label>
+            <label for="r4" class="bar"></label>
+            <label for="r5" class="bar"></label>
+        </div>
+        
+    </div>
+    <div class="clearfix inmportant"></div>
+    <!-- 主题内容 -->
+    <!-- 个人介绍部分 -->
+    <div class="me" id="two">
+        ————个人介绍————
+    </div>
+    <div class="container" >
+        <div class="avatar">
+            <img src="./头像.jpg" alt="我的头像">
+            <p>
+                学长学姐好,我叫梅堂萍,性别男,
+                是一条大二咸鱼,我自称自己加阿梅,爱好跑步、打游戏、看恐怖片以及摸鱼,
+                我还喜欢看猎奇,比如都市怪谈的东西,也许会比较怪,但是真的很好看。
+                我感觉自己没有什么特长,什么都是中规中矩的样子。(很抱歉！)
+            </p>
+        </div>
+        <div class="avatar2">
+            <img src="./cat2.jpg" alt="猫猫">
+            <p>
+                我很喜欢看猫猫等毛茸茸的动物,刷视频就感觉很好rua,但是现在养不了宠物,只能散步的时候看看宿舍楼下的学长学姐。
+                hhh,沙河操场旁边的猫猫好胖哦。以后还想养狗,可是猫猫也很可爱,然后就想养两只,但又害怕他们打架(
+            </p>
+        </div>
+    </div>
+    <!-- 照片部分 -->
+    <div class="container" >
+        <div class="picturewall" >
+           <p>————照片墙————</p>
+        </div>
+        <div id="picture">
+            <ul id="six">
+                <li class="active" ></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+    <!-- 文章部分 -->
+    <div class="container" id="three">
+            <div class="passageSearch">
+                ————文章展示————
+            </div>
+            <div class="four">
+                <input type="text" id="searchBox" placeholder="输入关键词">
+                
+            </div>
+            
+            <div id="article-container">
+                <div class="article">
+                    <h2 class="article-title" onclick="toggleStyle('content1')">前端学习.始</h2>
+                    <p class="article-content word" id="content1"  >
+                        开始直接是自问自答环节:为什么选焦糖?因为想进。为什么选前端?因为想学。作为一条咸鱼还是应该一步一步来,搜索html开始学基础标签怎么写
+                        然后一整个页面全都是我瞎写着玩的标签,还打上注释,这个是干嘛的那个是干嘛的,然后看着列表上的一个个标签我都写过了,我以为html就这样过去了。
+                        然后看着招新页面,上b站学css,果然在学习的过程中充满艰辛,首先是五十个小时的视频时长,就算是粗略的看一遍也十分折磨,我认为这只是看起来比较多,
+                        然后发现是真的很多,我不知道我能用上多少但是我还是对于学的做好自己看得懂的注释,就感觉很累,但是又没学什么,心理上莫名其妙的烦躁。
+                        但我觉得这是学习过程中常有的事,那就一鼓作气干下去。
+                    </p>
+                </div>
+                <div class="article">
+                    <h2 class="article-title"onclick="toggleStyle('content2')">前端学习.承</h2>
+                    <p class="article-content word" id="content2">
+                        这里是学习过程中的阿梅,眼看着时间越来越少,我的心也逐渐焦虑起来了,为什么前端知识点那么多,b站找一个视频就是三四十个小时起步,
+                        在个人页面的构建中,在天俞老师的洗礼下也不是一帆风顺,最经常的就是块之间发生覆盖,定位不清晰,然后回头看我做的class和id,真的是想到就用,
+                        十分的丑陋啊。而进阶任务中,作为一条咸鱼,在原生js和使用vue框架之中我毅然决然地...选择了vue,也许最后的成果会很丑陋,夹杂着gpt还有别人视频的代码,
+                        但是我还是选择了vue(这里是后来的阿梅,其实我觉得原生js也不错,vue的学习视频也很多啊(悲))。这是一条咸鱼的尊严,虽然它的视频时长也很长。
+                        希望之后我能够做出让自己满意的页面。现在就是刷b站的时候就想F12检查一下(虽然没什么用)。
+                    </p>
+                </div>
+                <div class="article">
+                    <h2 class="article-title"onclick="toggleStyle('content3')">前端学习.终</h2>
+                    <p class="article-content word" id="content3">
+                        这里是第三篇关于学习的文章，首先是在复刻b站的途中出现了三个问题。首先，是vue，学不会啊，当废物了，暴风哭泣，我还是老老实实回去用原生js，
+                        这道题我不会啊（哭）。第二个问题比较关键，出现在做完b站首页的瞬间，那个时候我打开招新页面继续看要求，发现好像是复刻一个自己的“b站”，嘶。
+                        那我，好像是直接复刻了个首页。。。啊？啊！寄！然后只能硬着头皮把剩下的搞完，本来就不会设计的我直接潜意识认为只要复刻不要设计就行了（哭）。
+                        第三个问题就是在“做”b站的时候出现的各种各样各种各样的问题这个放到那个md文件里细嗦。这里是快截止时发现自己审题错了一个月的睿智（哭）。
+                    </p>
+                </div>
+                <div class="article">
+                    <h2 class="article-title"onclick="toggleStyle('content4')">大学于我</h2>
+                    <div class="article-content word" id="content4">
+                        大学是什么呢,是一个学府聚集着从各地来的学子。那大学对于我是什么呢,在一年的多大学生活(摸鱼)中,大学是平时上课,该学学,该逃逃,
+                        周末和朋友出门吃吃喝喝玩玩,不出门就待宿舍打游戏看小说睡觉的地方,在这里老师不会多管你,家长不会念叨你,干啥都凭自己感觉的地方。
+                        但凭感觉就很玄乎了,我可以一次挂三门摆烂,也可以从早到晚待图书馆卷到死,但不巧的是我那边都不是,就想该学学该玩玩,不挂科,顺利毕业。
+                        但这就够了吗,我感觉根本不行,这就是我为什么要来做招新题,虽然去年大一并没有进入焦糖,但是我觉得我重视的还是做招新题时焦头烂额的感觉。
+                        或许在以后我不会再碰app页面的这个项目一点,但是在完成一个app页面的时候我还是很开心,和朋友分享,即使这个页面现在看来就是依托构思(划掉)。
+                        但是它带给我是在宿舍打游戏所没有的充实。或许这次的前端我做的还是依托构思(划掉),但是学习的乐趣,与朋友分享的乐趣,感觉充实的乐趣是该学学该玩玩所带不来的。
+                        所以我觉得大学是自己选择实现自身价值的地方,也许我没什么生产力,代码很丑陋,打游戏还不厉害,但是我可以和朋友在秋天凉爽的时候散步,在图书馆里面准备期中,
+                        渴望着谈恋爱(呜呜呜),大学就是这样一个地方,希望在大四毕业的时候我也能像现在打字一样充实。
+                    </div>
+                </div>
+                
+            </div>
+            <div class="bottom">长风破浪会有时，直挂云帆济沧海</div> 
+    </div>
+       
+        
+    <script src="个人网页.js"></script>
+
+</body>
+</html>
